@@ -1,0 +1,29 @@
+{
+  "questions":[
+    {
+      "question": "Choose the correct statement about the lowercase filter:",
+      "answer5": ["It is a function that takes text as input","The lowercase filter converts a text to lowercase text is correct" ,"Both a and b" ,"None of the above"],
+      "correctAnswer": "The lowercase filter converts a text to lowercase text is correct"
+    },
+    {
+      "question": "AngularJS is perfect for?",
+      "answer5": ["MPAs","DPAs","CPAs","SPAs"],
+      "correctAnswer": "SPAs"
+    },
+    {
+      "question": "Choose the correct syntax for writing AngularJS expression:",
+      "answer5": ["[expression]","{{expression}}" ,"{{{expression}}}" ,"{expression}"],
+      "correctAnswer": "{{expression}}"
+    },
+    {
+      "question": "Choose the reactor which is used to bind the application data to the HTML view in AngularJS:",
+      "answer5": ["ng-bind directive","ng-model directive","ng-init directive", "ng-app directive"],
+      "correctAnswer": "ng-bind directive"
+    },
+    {
+      "question": "Choose the advantage of Angular JS among the following:",
+      "answer5": ["It provides reusable components","It uses dependency injection and makes use of separation of concerns","It is unit-testable","All of the above"],
+      "correctAnswer": "All of the above"
+    }
+  ]
+}

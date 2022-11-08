@@ -1,0 +1,33 @@
+<div class="main">
+      <h2>{{question}}</h2>
+  <div class="into">
+  <ul>
+    <li *ngFor="let ans of answers ; index as i">
+      <button  class="answer" (click)="selectAnswer(ans,i)" [ngStyle]="{'background-color': theme[i]}" >{{ans}}</button>
+    </li>
+  </ul>
+  <ion-modal [isOpen]="isModalOpen"  id="my-modal">
+    <ng-template >
+      <ion-content class="ion-padding" >
+        <h2 class="modal-content" >
+         You have {{countCorrect}} correct answers in {{countOfquestion+1}} questions.
+        </h2>
+      </ion-content>
+      <ion-footer>
+        <ion-toolbar>
+          <ion-buttons slot="end">
+            <ion-button (click)="setOpen(false)">Start Again</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-footer>
+    </ng-template>
+  </ion-modal>
+  <footer>
+    <p class="copyright">
+      Copyright © Alexandros Kosmas
+    </p>
+  </footer>
+  </div>
+</div>
+
+
