@@ -1,14 +1,13 @@
-**Question game with Ionic framework 6 with Angular**
+## Question game with Ionic framework 6 with Angular
 
- *TEST: Stack: Ionic framework 6 with Angular
+### TEST: Stack: Ionic framework 6 with Angular
 
- Create a quiz engine that will read 5 questions from a static json. Each question will have 4 answers.
+_Create a quiz engine that will read 5 questions from a static json. Each question will have 4 answers._
+_The user will enter the UI and will see the first question with the answers. If the user clicks on the correct answer,_
+_the color of the answer will turn green and will take you to the next question, if not the color of the answer will become red and will wait till you click the correct answer._
+_At the end of the five questions the user will see an overview of how many correct questions he has scored._ 
 
-The user will enter the UI and will see the first question with the answers. If the user clicks on the correct answer,
-
-the color of the answer will turn green and will take you to the next question, if not the color of the answer will become red and will wait till you click the correct answer.*
-
-At the end of the five questions the user will see an overview of how many correct questions he has scored.
+### Answer
 
 ```Models```
 
@@ -47,3 +46,7 @@ cd Angular-question-game
 npm i
 ionic serve 
 ```
+
+
+### Note: 
+When you finished your questions, the game open a modal, in continue you start the game again.   
