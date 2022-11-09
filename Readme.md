@@ -49,4 +49,4 @@ ionic serve
 
 
 ### Note: 
-When you finished your questions, the game open a modal, in continue you start the game again.   
+When you finished your questions, the game open a modal, in continue you will start the game again.   
