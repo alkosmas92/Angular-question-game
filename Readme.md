@@ -39,14 +39,16 @@ When I click an answer
 ```selectAnswer(answer, index)```
 
 
-You can run with:
+You can ### run
+with:
 ```
 git clone https://github.com/alkosmas92/Angular-question-game
 cd Angular-question-game
 npm i
 ionic serve 
 ```
-
+### Test:
+``` ng test ```
 
 ### Note: 
 When you finished your questions, the game open a modal, in continue you will start the game again.   
