@@ -39,7 +39,8 @@ When I click an answer
 ```selectAnswer(answer, index)```
 
 
-You can ### run
+You can 
+### run
 with:
 ```
 git clone https://github.com/alkosmas92/Angular-question-game
