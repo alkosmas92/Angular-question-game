@@ -20,7 +20,7 @@ export class QuestionComponent implements OnInit {
   isModalOpen = false;
   //this Flag check when you have chosen wrong answer
   flagFalse: number;
-  // this variable count the correct answers
+  // this variable counts the correct answers
   countCorrect: number;
 
   //A lifecycle hook that is called after Angular has initialized all data-bound properties of a directive.
@@ -36,7 +36,7 @@ export class QuestionComponent implements OnInit {
     this.theme.fill('orange');
     this.flagFalse = 0;
   }
-  //The actions when you have chosen the correct answer -->you go to the next question
+  //The actions when i have chosen the correct answer -->i go to the next question
   selectNext() {
     this.indexOfQuestions++;
     this.question =
@@ -69,7 +69,7 @@ export class QuestionComponent implements OnInit {
     if (this.indexOfQuestions === 0) {
       this.countCorrect = 0;
     }
-    //When I have additional questions so:
+    //When I have additional questions:
     if (this.indexOfQuestions < this.countQuestion) {
       //i will raise my count of correct answer when you have chosen the correct answer and:
       if (!this.flagFalse) {
@@ -78,9 +78,9 @@ export class QuestionComponent implements OnInit {
       //I will go to next question
       this.selectNext();
     }
-    //else if you do not have additional question
+    //else if you do not have additional question:
     else if (this.indexOfQuestions === this.countQuestion) {
-      //raise my count of correct answer when you have chosen the correct answer and:
+      //I raise my count of correct answer when you have chosen the correct answer and:
       if (!this.flagFalse) {
         this.countCorrect++;
       }
@@ -88,8 +88,8 @@ export class QuestionComponent implements OnInit {
       this.setOpen(true);
     }
   }
-  //I use when I click an answer
-  selectAnswer(answer, index) {
+  // I click an answer
+  selectAnswer(answer, index:number) {
     //I refresh my theme with orange color
     this.theme.fill('orange');
     //When I have chosen the correct answer:
@@ -104,7 +104,7 @@ export class QuestionComponent implements OnInit {
     }
     //Else if I have chosen the wrong answer:
     if (answer !== this.correctAnswer) {
-      //1) I will activate the flag
+      //1) I will activate the flagFalse
       this.flagFalse = 1;
       //2) I will change the color of this button to red
       this.theme[index] = 'red';

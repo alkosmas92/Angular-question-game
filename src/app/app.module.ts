@@ -8,11 +8,11 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {QuestionComponentModule} from "./question/question.modules";
+import {QuestionComponentModule} from './question/question.modules';
 
 @NgModule({
   declarations: [AppComponent ],
-    imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, OverlayModule, QuestionComponentModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, OverlayModule, QuestionComponentModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
