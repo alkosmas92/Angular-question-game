@@ -40,7 +40,7 @@ When I click an answer
 
 
 You can 
-### run
+### Run
 with:
 ```
 git clone https://github.com/alkosmas92/Angular-question-game
