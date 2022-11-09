@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import data from '../../question.json'
-import {Question} from "../models/question";
+import data from '../../question.json';
+import { Question } from '../models/question';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-
 export class QuestionsService {
+  //I initialize my data to questions base on Question's model
   questions: Question[] = data.questions;
-  constructor() { }
+  constructor() {}
 }
